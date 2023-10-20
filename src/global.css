@@ -1,0 +1,18 @@
+/* Define the custom properties inside :root */
+:root {
+	--background-color-light: #ffffff;
+	--font-color-light: #333333;
+
+	--background-color-dark: #000000;
+	--font-color-dark: #ffffff;
+}
+
+html[data-theme="dark"] {
+	background-color: var(--background-color-dark);
+	color: var(--font-color-dark);
+}
+
+html[data-theme="light"] {
+	background-color: var(--background-color-light);
+	color: var(--font-color-light);
+}
